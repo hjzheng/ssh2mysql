@@ -29,7 +29,7 @@ npm install @jxz/ssh2mysql
 
 // execSql.ts
 
-import ssh2mysql from './ssh2mysql'
+import * as ssh2mysql from '@jxz/ssh2mysql'
 import { config } from '@ys/api'
 
 const fs = require('fs')
