@@ -1,7 +1,7 @@
 const mysql = require('mysql2');
 const tunnel = require('tunnel-ssh');
 
-const ssh2mysql = {
+const ssh2mysql = (module.exports = {
   _conn: null,
 
   _mysql_pool: null,
@@ -67,6 +67,4 @@ const ssh2mysql = {
   _addDefaultsDBConfig(dbConfig) {
     return Object.assign({ host: 'localhost', port: 3306 }, dbConfig);
   }
-};
-
-module.exports = ssh2mysql;
+});
