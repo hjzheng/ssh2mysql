@@ -1,12 +1,13 @@
 # ssh2mysql
 
-```
+```js
 npm install @jxz/ssh2mysql
 ```
 
-```
+```ts
 // config.json
-// you can get db configuration description from mysql2 and ssh configuration description from tunnel-ssh
+// you can get db configuration description from mysql2 and
+// ssh configuration description from tunnel-ssh
 
 "db": {
     "type": "mysql",
